@@ -6,7 +6,7 @@
 一个融合 **Agent + RAG** 架构的智能问答系统的学习项目，能够基于知识库文档进行高质量问答，支持多工具调用以及自动报告生成。
 
 ## 项目结构
-'''
+```
 Langchain-Based-Agent-RAG-QA-System/
 ├── agent/
 │ ├── react_agent.py # Agent核心逻辑
@@ -41,31 +41,31 @@ Langchain-Based-Agent-RAG-QA-System/
 ├── app.py # 项目主入口（启动可视化网页）
 ├── requirements.txt
 └── README.md
-'''
+```
 
 ## 使用流程
 ###1. 安装依赖
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 ###2. 配置阿里云百炼平台api
-'''
+```
 export DASHSCOPE_API_KEY="your_api_key"
-'''
+```
 
-###3. 将外部知识库文档放在'data/'目录下，目录中的文件转换为向量并存储到向量数据库：
-'''
+###3. 将外部知识库文档放在`data/`目录下，目录中的文件转换为向量并存储到向量数据库：
+```
 python -m rag.vector_store
-'''
+```
 
 ###4. 启动可视化界面
-'''
+```
 streamlit run app.py
-'''
+```
 
 ## 自定义配置文件
-在'config/'下有四个yml文件，可以自定义使用的模型名字、数据库存储路径、RAG分片大小等配置。项目提供丰富的日志保存功能，运行后默认存放在'logs/'目录下。
+在`config/`下有四个yml文件，可以自定义使用的模型名字、数据库存储路径、RAG分片大小等配置。项目提供丰富的日志保存功能，运行后默认存放在`logs/`目录下。
 
 ##🤝Tips:
 本项目仅供学习和交流
