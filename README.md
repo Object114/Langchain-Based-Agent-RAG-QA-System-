@@ -25,7 +25,7 @@ Langchain-Based-Agent-RAG-QA-System/
 │ └── factory.py # 模型工厂（统一创建 LLM 和 Embedding 实例）
 │
 ├── prompts/
-│ # Prompt 提示词模板目录（系统提示词 / RAG / 报告生成三种提示词）
+│ └── Prompt # 提示词模板目录（系统提示词 / RAG / 报告生成三种提示词）
 │
 ├── rag/
 │ ├── rag_service.py # RAG服务层（封装检索 + 生成的完整流程）
